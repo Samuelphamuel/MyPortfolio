@@ -1,0 +1,61 @@
+<html>
+
+    <head>
+	
+		<link rel='icon' href="assets/Frying-Pan-with-Egg.png" />
+		
+        <link rel="stylesheet" href="../styles/styles.css">
+		<link href="/css/styles.css" rel="stylesheet" type = "text/css">
+        <link href="/css/bootstrap.css" rel="stylesheet" type = "text/css">
+        <link href="/css/bootstrap.min.css" rel="stylesheet" type = "text/css">
+		
+		<style>
+		
+			body {
+				text-align: center;
+				background-image: url("assets/details-page-background.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				Overflow: hidden;
+			}
+			
+			.blogs-content{
+			
+			}
+			
+			.details-content{
+			
+			}
+			
+		</style>
+		
+    </head>
+	
+    <body style = "background-image: url('../assets/details-page-background.jpg')">
+	
+		<div class="details-content">
+			<h1> Recipe Name: </h1>
+            <h3><%= recipe.recipeName %></h3>
+            <div class="content">
+                <h5> Description: </h5>
+                <p><%= recipe.recipeDescription %></p>
+                <h5> Ingredients: </h5>
+                <p><%= recipe.recipeIngredient %></p>
+                <h5> Instructions: </h5>
+                <p><%= recipe.recipeInstruction %></p>
+                <h5> Time to cook: </h5>
+                <p><%= recipe.recipeTime %></p>
+			</div>
+		</div>
+		
+		<div class = "blogs-content">	
+            <h3> 
+				<a href="/recipes">All Recipes </a> |
+				<a href="/recipes/Create">Create a Recipe</a> |
+				<a href="/profile">Profile</a> |
+				<a href="/logout">Logout</a>
+			</h3>
+		</div>
+    </body>
+	
+</html>
