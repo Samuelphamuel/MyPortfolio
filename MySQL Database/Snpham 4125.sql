@@ -1,0 +1,1 @@
+ALTER USER snpham IDENTIFIED BY Phamsa4125;
